@@ -1,0 +1,88 @@
+@import "../../app/app.scss";
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+
+    @include mobile{
+      padding: 0px 4.1%;
+    }
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 150px;
+    background-color: #18181b;
+    height: 70px;
+    width: 70px;
+    box-shadow: 0 4px 20px rgba(76,111,156,.5);
+    z-index: 1;
+
+    @include mobile{
+    margin: 20px 0px;
+    z-index: 1;
+    height: 56px;
+    width: 56px;
+    margin-top: 40px;
+    }
+
+    @include small_desktop{
+    margin: 30px 6vw; 
+    }
+
+    @media (min-width:1700px) and (max-width:1800px){
+      margin: 30px 6vw;
+    }
+  }
+
+  .mob-hamburger{
+   margin-top: 35px;
+   cursor: pointer;
+   
+   svg{
+    width: 69px;
+    height: 73px;
+   }
+  }
+  
+  svg {
+    width: 31px;
+    height: 47px;
+    z-index: 1;
+
+    @include mobile{
+      width: 24px;
+      height: 37px;
+    }
+  }
+  
+  .nav-sections {
+    margin-top: 40px;
+    cursor: pointer;
+    margin-right: 60px;
+
+    @include mobile{
+      margin-top: 20px;
+      margin-right: 0px;
+    }
+
+    @include small_desktop{
+       z-index: 1;
+       margin-right: -0.5em;
+      }
+  }
+  
+  span {
+    margin: auto 70px;
+    font-size: 16px;
+
+    @include mobile{
+      margin: 5px 0px;
+      font-size: 10px;
+    }
+  }
+  
