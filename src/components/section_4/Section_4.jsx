@@ -1,15 +1,18 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
+// import Image from 'next/image'
 import "./section_4.scss";
 
 export default function Section_4() {
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const [isMobile, setIsMobile] = useState(typeof window !== 'undefined' && window.innerWidth <= 768);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(typeof window !== 'undefined' && window.innerWidth <= 768);
     };
+
+    handleResize();
 
     window.addEventListener('resize', handleResize);
 
@@ -54,7 +57,7 @@ export default function Section_4() {
           <h3>We Believe In Creating The Best Work And Being The<br />Best To Work With.</h3>
         </>
         )}
-          <div className='btn'><button>Let's Work Together</button></div>
+          <div className='btn'><button>Let&apos;s Work Together</button></div>
         </div>
         {!isMobile ? (
         <div className='imgg'><img src="https://www.pxal.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FhandBg.d1d85ff6.png&w=1080&q=100" alt="" /></div>

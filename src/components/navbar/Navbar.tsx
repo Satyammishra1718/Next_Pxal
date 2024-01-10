@@ -4,12 +4,14 @@ import React, { useState, useEffect } from 'react'
 import "./navbar.scss"
 
 export default function Navbar() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(typeof window !== 'undefined' && window.innerWidth <= 768);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(typeof window !== 'undefined' && window.innerWidth <= 768);
     };
+
+    handleResize();
 
     window.addEventListener('resize', handleResize);
 

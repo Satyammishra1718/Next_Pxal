@@ -1,15 +1,18 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
+// import Image from 'next/image'
 import "./section_2.scss";
 
 export default function Section_2() {
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const [isMobile, setIsMobile] = useState(typeof window !== 'undefined' && window.innerWidth <= 768);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(typeof window !== 'undefined' && window.innerWidth <= 768);
     };
+
+    handleResize();
 
     window.addEventListener('resize', handleResize);
 
@@ -33,8 +36,8 @@ export default function Section_2() {
         <div className='text'>
           <h1>From concept to creation,<br />
             we bring your vision to life</h1>
-          <h3>At Pxal, we're passionate about creating innovative designs and solutions that help our clients achieve their goals. Our team of skilled designers and developers work together to deliver exceptional digital experiences that stand out in today's fast-paced digital landscape</h3>
-          <div className='btn_work'><button>Let's Work Together</button></div>
+            <h3>At Pxal, we&apos;re passionate about creating innovative designs and solutions that help our clients achieve their goals. Our team of skilled designers and developers work together to deliver exceptional digital experiences that stand out in today&apos;s fast-paced digital landscape</h3>
+          <div className='btn_work'><button>Let&apos;s Work Together</button></div>
         </div>
       </div>
     </div>

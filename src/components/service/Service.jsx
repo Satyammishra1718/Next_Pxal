@@ -29,7 +29,7 @@ export default function Service() {
         <div className='desc'>
             <div className='line'></div>
             <p className='content'>
-            Wordpress, React, Shopify, Marketing, Business, Portfolio, you name it and we'll build it. Our websites are light, fast and responsive. We guarantee the fastest load times and smoothest animations.
+            Wordpress, React, Shopify, Marketing, Business, Portfolio, you name it and we&apos;ll build it. Our websites are light, fast and responsive. We guarantee the fastest load times and smoothest animations.
             </p>
         </div>
       </div>
@@ -42,7 +42,7 @@ export default function Service() {
         <div className='desc'>
             <div className='line'></div>
             <p className='content'>
-            We specialize in building custom mobile apps for both iOS and Android platforms that are user-friendly, scalable, and secure. From concept to launch, we work closely with you to ensure that your app meets your business needs and exceeds your users' expectations.
+            We specialize in building custom mobile apps for both iOS and Android platforms that are user-friendly, scalable, and secure. From concept to launch, we work closely with you to ensure that your app meets your business needs and exceeds your user&apos;s expectations.
             </p>
         </div>
       </div>
