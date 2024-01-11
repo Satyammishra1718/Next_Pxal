@@ -115,7 +115,7 @@
 
             &::before {
                 content: "";
-                width: 1250px;
+                width: 78.5vw;
                 height: 1px;
                 background: #515151;
                 position: absolute;
@@ -123,12 +123,12 @@
                 left: 6.3%;
 
                 @include small_desktop{
-                    width: 1135px;
+                    width: 80vw;
                     left: 5.5%;
                 }
 
                 @media (min-width:1000px) and (max-width:1366px){
-                    width: 1035px;
+                    width: 81.5vw;
                 }
 
                 @include extra_desktop{
