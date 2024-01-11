@@ -15,11 +15,11 @@
  }
 
  @media (max-width : 399px) and (min-height:700px) and (max-height:800px){
-    height: 260vh;
+    height: 1900px;
   }
 
   @media (max-width : 399px) and (min-height:801px) and (max-height:900px){
-    height: 235vh !important;
+    height: 1900px !important;
   }
 
   @media (min-width:400px) and (max-width : 400px) and (min-height:701px) and (max-height:800px){
@@ -30,12 +30,20 @@
     height: 230vh !important;
   }
 
+  @media (min-width:401px) and (max-width : 800px) and (min-height:601px) and (max-height:700px){
+    height: 1890px !important;
+  }
+
   @media (min-width:401px) and (max-width : 800px) and (min-height:701px) and (max-height:800px){
-    height: 265vh !important;
+    height: 1900px !important;
   }
 
   @media (min-width:401px) and (max-width : 800px) and (min-height:801px) and (max-height:900px){
-    height: 235vh !important;
+    height: 1860px !important;
+  }
+
+  @media (min-width:401px) and (max-width : 800px) and (min-height:901px) and (max-height:950px){
+    height: 1870px !important;
   }
 
  @media (min-width:400px) and (max-width:400px){

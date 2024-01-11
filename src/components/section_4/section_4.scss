@@ -18,19 +18,19 @@
     }
 
     @media (min-width:400px) and (max-width:400px){
-        height: 295vh;
+        height: 1950px;
     }
 
     @media (max-width:399px){
-        height: 305vh;
+        height: 1910px;
     }
 
     @media (max-width : 399px) and (min-height:700px) and (max-height:800px){
-        height: 275vh;
+        height: 1900px;
       }
 
       @media (max-width : 399px) and (min-height:801px) and (max-height:900px){
-        height: 245vh !important;
+        height: 1900px !important;
       }
 
       @media (min-width:400px) and (max-width : 400px) and (min-height:701px) and (max-height:800px){
@@ -41,12 +41,20 @@
         height: 250vh !important;
       }
 
+      @media (min-width:401px) and (max-width : 800px) and (min-height:601px) and (max-height:700px){
+        height: 2000px !important;
+      }
+
       @media (min-width:401px) and (max-width : 800px) and (min-height:701px) and (max-height:800px){
-        height: 280vh !important;
+        height: 2000px !important;
       }
     
       @media (min-width:401px) and (max-width : 800px) and (min-height:801px) and (max-height:900px){
-        height: 250vh !important;
+        height: 1960px !important;
+      }
+    
+      @media (min-width:401px) and (max-width : 800px) and (min-height:901px) and (max-height:950px){
+        height: 1970px !important;
       }
 
     @media (min-width:390px) and (max-width:390px){
@@ -273,18 +281,25 @@
 
             img{
             @media (max-width:399px){
-                width: 330px !important;
+                width: 91vw !important;
                 height:325px !important ;
                 margin-left: 1%;
             }
 
-            @media (min-width:400px) and (max-width:400px){
-                margin-left: 0.8%;
+            @include mobile{
+              width: 86vw;
             }
 
-            @media (min-width:375px) and (max-width:375px){
-               margin-left: 0.5%;
+            @media (min-width:400px) and (max-width:400px){
+                margin-left: 0%;
+                width: 92vw !important;
             }
+
+            @media (min-width:390px) and (max-width:390px){
+                margin-left: 0%;
+                width: 88vw !important;
+            }
+
         }
         }
     }
