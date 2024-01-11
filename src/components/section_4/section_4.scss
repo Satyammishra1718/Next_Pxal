@@ -25,6 +25,10 @@
         height: 1910px;
     }
 
+    @media (max-width : 399px) and (min-height:600px) and (max-height:699px){
+      height: 1900px;
+    }
+
     @media (max-width : 399px) and (min-height:700px) and (max-height:800px){
         height: 1900px;
       }
